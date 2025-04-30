@@ -6,7 +6,7 @@
 In this work, we present Structure–View Collaborative Gaussian Splatting (SV‑GS), a unified framework designed to capture ultra‑fine details by jointly modeling global scene structure and enforcing multi‑view consistency. Specifically, we first fuse multi‑scale contextual cues into a global tri‑plane backbone via a novel three‑level compensation mechanism, seamlessly blending coarse layout with intricate local geometry and texture. To prevent any single camera from dominating the reconstruction, we then synchronize gradient updates across all overlapping views, ensuring that each Gaussian’s position and appearance remain coherent under varied viewpoints. Finally, our visibility‑aware optimization adaptively injects new Gaussians in sparsely observed regions while employing structure‑consistency‑based pruning of single‑view–overfitted Gaussians to eliminate overfitted primitives, delivering robust generalization across large‑scale, complex environments.
 
 <p align="center">
-<img src="fig_cover_.png" width=100% height=100% 
+<img src="fig_cover.png" width=100% height=100% 
 class="center">
 </p>
 
@@ -41,17 +41,16 @@ We tested on a server configured with Ubuntu 20.04, cuda 11.8 and gcc 9.4.0. Oth
 1. Clone this repo:
 
 ```
-git clone https://github.com/SCUT-BIP-Lab/Geo_gs.git
-cd Geo_gs
+git clone https://github.com/SCUT-BIP-Lab/SV-GS.git
+cd SV-GS
+unzip ./submoudles.zip
 ```
 
 2. Install dependencies
 
 ```
-conda create -n Geo_gs python=3.8
-conda activate Geo_gs
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate svgs
 ```
 
 3、Data preparation
@@ -111,21 +110,21 @@ python metrics.py -m <path to trained model>
 Visual comparisons on Mill-19 and MatrixCity dataset:
 
 <p align="center">
-<img src="imgs/fig_rub.png" width=100% height=100% 
+<img src="fig_rub.png" width=100% height=100% 
 class="center">
 </p>
 
-Visual comparisons on SCUT_CA outdoor scenes:
+Visual comparisons on tandt outdoor scenes:
 
 <p align="center">
-<img src="imgs/fig_scut.png" width=100% height=100% 
+<img src="fig_tandt.png" width=100% height=100% 
 class="center">
 </p>
 
 Visual comparisons on WHU dataset and Plateau Region scenes:
 
 <p align="center">
-<img src="imgs/fig_whu.png" width=100% height=100% 
+<img src="fig_whu.png" width=100% height=100% 
 class="center">
 </p>
 
