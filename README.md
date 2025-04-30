@@ -83,24 +83,24 @@ data/
 ...
 ```
 
-## Quick Start(MatrixCity-Aerial dataset)
+## Quick Start
 
-You can quickly train the model and obtain test results on MatrixCity-Aerial dataset using the following command:
+You can quickly train the  dataset using the following command:
 
 ```
-conda activate Geo_gs
-cd Geo_gs
-bash single_train.sh
+conda activate svgs
+cd SV-GS
+python train.py -s ./data/dataset/scene/  -m ./output/dataset/scene/ --mv 4 --num_channels 15 --plane_size 2800 --no_downsample --port 6555 --contractor --bbox_scale 0.3 --voxel_size 0 --update_init_factor 16 --appearance_dim 0 
 ```
 
 ## Training and Evaluation
 
-You can run other scene datasets by either modifying the previous bash file or executing the following command. For specific file modifications, please contact us [Haihong Xiao](auhhxiao@mail.scut.edu.cn) and [Jianan Zou](202130450216@mail.scut.edu.cn), and we will provide assistance.
+You can run other scene datasets by either modifying or executing the following command. For specific file modifications, please contact us [Haihong Xiao](auhhxiao@mail.scut.edu.cn) and [Jianan Zou](202130450216@mail.scut.edu.cn), and we will provide assistance.
 
 ```
-conda activate Geo_gs
-cd Geo_gs
-python train.py -s <path to COLMAP or NeRF Synthetic dataset>　--eval # Train with train/test split
+conda activate svgs
+cd SV-GS
+python train.py -s <path to COLMAP or NeRF Synthetic dataset>　--eval --mv 4 --num_channels 15 --plane_size 2800 --no_downsample --port 6555 --contractor --bbox_scale 0.3 --voxel_size 0 --update_init_factor 16 --appearance_dim 0 
 python render.py -m <path to trained model>
 python metrics.py -m <path to trained model>
 ```
@@ -121,10 +121,10 @@ Visual comparisons on tandt outdoor scenes:
 class="center">
 </p>
 
-Visual comparisons on WHU dataset and Plateau Region scenes:
+Visual comparisons on qualitative comparison of ablation study on cross-structure collaborated module:
 
 <p align="center">
-<img src="fig_whu.png" width=100% height=100% 
+<img src="fig_ablation_s.png" width=100% height=100% 
 class="center">
 </p>
 
