@@ -117,7 +117,7 @@ class="center">
 Visual comparisons on tandt outdoor scenes:
 
 <p align="center">
-<img src="fig_tandt.png" width=100% height=100% 
+<img src="fig_tnt.png" width=100% height=100% 
 class="center">
 </p>
 
