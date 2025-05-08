@@ -1,4 +1,4 @@
-name: svgs
+name: cogs
 channels:
   - pytorch
   - conda-forge
