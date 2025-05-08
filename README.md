@@ -3,7 +3,7 @@
 
 ## Overview
 
-In this work, we present Structure–View Collaborative Gaussian Splatting (SV‑GS), a unified framework designed to capture ultra‑fine details by jointly modeling global scene structure and enforcing multi‑view consistency. Specifically, we first fuse multi‑scale contextual cues into a global tri‑plane backbone via a novel three‑level compensation mechanism, seamlessly blending coarse layout with intricate local geometry and texture. To prevent any single camera from dominating the reconstruction, we then synchronize gradient updates across all overlapping views, ensuring that each Gaussian’s position and appearance remain coherent under varied viewpoints. Finally, our visibility‑aware optimization adaptively injects new Gaussians in sparsely observed regions while employing structure‑consistency‑based pruning of single‑view–overfitted Gaussians to eliminate overfitted primitives, delivering robust generalization across large‑scale, complex environments.
+In this work, we present Structure–View Collaborative Gaussian Splatting (SplatCo), a unified framework designed to capture ultra‑fine details by jointly modeling global scene structure and enforcing multi‑view consistency. Specifically, we first fuse multi‑scale contextual cues into a global tri‑plane backbone via a novel three‑level compensation mechanism, seamlessly blending coarse layout with intricate local geometry and texture. To prevent any single camera from dominating the reconstruction, we then synchronize gradient updates across all overlapping views, ensuring that each Gaussian’s position and appearance remain coherent under varied viewpoints. Finally, our visibility‑aware optimization adaptively injects new Gaussians in sparsely observed regions while employing structure‑consistency‑based pruning of single‑view–overfitted Gaussians to eliminate overfitted primitives, delivering robust generalization across large‑scale, complex environments.
 
 <p align="center">
 <img src="fig_cover.png" width=100% height=100% 
@@ -41,8 +41,8 @@ We tested on a server configured with Ubuntu 20.04, cuda 11.8 and gcc 9.4.0. Oth
 1. Clone this repo:
 
 ```
-git clone https://github.com/SCUT-BIP-Lab/SV-GS.git
-cd SV-GS
+git clone https://github.com/SCUT-BIP-Lab/SplatCo.git
+cd SplatCo
 unzip ./submoudles.zip
 ```
 
@@ -50,7 +50,7 @@ unzip ./submoudles.zip
 
 ```
 conda env create -f environment.yml
-conda activate svgs
+conda activate splatco
 ```
 
 3、Data preparation
@@ -85,11 +85,11 @@ data/
 
 ## Quick Start
 
-You can quickly train the  dataset using the following command:
+You can quickly train the dataset using the following command:
 
 ```
-conda activate svgs
-cd SV-GS
+conda activate splatco
+cd SplatCo
 python train.py -s ./data/dataset/scene/  -m ./output/dataset/scene/ --mv 4 --num_channels 15 --plane_size 2800 --no_downsample --port 6555 --contractor --bbox_scale 0.3 --voxel_size 0 --update_init_factor 16 --appearance_dim 0 
 ```
 
@@ -98,8 +98,8 @@ python train.py -s ./data/dataset/scene/  -m ./output/dataset/scene/ --mv 4 --nu
 You can run other scene datasets by either modifying or executing the following command. For specific file modifications, please contact us [Haihong Xiao](auhhxiao@mail.scut.edu.cn) and [Jianan Zou](202130450216@mail.scut.edu.cn), and we will provide assistance.
 
 ```
-conda activate svgs
-cd SV-GS
+conda activate splatco
+cd SplatCo
 python train.py -s <path to COLMAP or NeRF Synthetic dataset>　--eval --mv 4 --num_channels 15 --plane_size 2800 --no_downsample --port 6555 --contractor --bbox_scale 0.3 --voxel_size 0 --update_init_factor 16 --appearance_dim 0 
 python render.py -m <path to trained model>
 python metrics.py -m <path to trained model>
