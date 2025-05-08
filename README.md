@@ -1,5 +1,5 @@
 <p align="center">
-<h1 align="center"><strong>Capturing Fine-Grained Details via Structure-View Collaborative Learning with Gaussian Splatting</strong></h1>
+<h1 align="center"><strong>CoGS: Structure-View Collaborative Gaussian Splatting for Detail-Preserving Large-Scale Unbounded Scene Rendering</strong></h1>
 
 ## Overview
 
