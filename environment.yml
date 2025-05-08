@@ -1,4 +1,4 @@
-name: cogs
+name: splatco
 channels:
   - pytorch
   - conda-forge
