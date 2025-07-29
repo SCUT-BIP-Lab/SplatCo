@@ -143,3 +143,7 @@ Our code follows several awesome repositories. We appreciate them for making the
 [Compact3DGS](https://github.com/maincold2/Compact-3DGS) 
 
 [Scaffold-GS](https://github.com/city-super/Scaffold-GS) 
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SCUT-BIP-Lab/SplatCo&type=Date)](https://www.star-history.com/#SCUT-BIP-Lab/SplatCo&Date)
