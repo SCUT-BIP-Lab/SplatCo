@@ -142,7 +142,9 @@ Our code follows several awesome repositories. We appreciate them for making the
 
 [Compact3DGS](https://github.com/maincold2/Compact-3DGS) 
 
-[Scaffold-GS](https://github.com/city-super/Scaffold-GS) 
+[Scaffold-GS](https://github.com/city-super/Scaffold-GS)
+
+[MVGS](https://github.com/xiaobiaodu/mvgs)
 
 ## Star History
 
