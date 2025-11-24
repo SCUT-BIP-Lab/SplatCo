@@ -144,8 +144,6 @@ Our code follows several awesome repositories. We appreciate them for making the
 
 [Scaffold-GS](https://github.com/city-super/Scaffold-GS)
 
-Apology: Our cross-view assisted training strategy builds on the multi-view regularization idea introduced in MVGS; we gratefully acknowledge this inspiration, and the earlier omission of this attribution in our preprint has now been corrected.
-
 [MVGS](https://github.com/xiaobiaodu/mvgs)
 
 ## Star History
