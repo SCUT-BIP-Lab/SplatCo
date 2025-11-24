@@ -110,14 +110,14 @@ python metrics.py -m <path to trained model>
 Visual comparisons on Mill-19 and MatrixCity dataset:
 
 <p align="center">
-<img src="fig_rub.png" width=100% height=100% 
+<img src="./fig_mvgs/city_mill.png" width=100% height=100% 
 class="center">
 </p>
 
 Visual comparisons on tandt outdoor scenes:
 
 <p align="center">
-<img src="fig_tnt.png" width=100% height=100% 
+<img src="./fig_mvgs/tandt.png" width=100% height=100% 
 class="center">
 </p>
 
@@ -143,6 +143,8 @@ Our code follows several awesome repositories. We appreciate them for making the
 [Compact3DGS](https://github.com/maincold2/Compact-3DGS) 
 
 [Scaffold-GS](https://github.com/city-super/Scaffold-GS)
+
+Sincere Appreciation and Apology: Our cross-view assisted training strategy builds on MVGS; we gratefully acknowledge this inspiration, and the earlier omission of this attribution in our preprint has now been corrected.
 
 [MVGS](https://github.com/xiaobiaodu/mvgs)
 
