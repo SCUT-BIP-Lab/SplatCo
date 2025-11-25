@@ -144,7 +144,9 @@ Our code follows several awesome repositories. We appreciate them for making the
 
 [Scaffold-GS](https://github.com/city-super/Scaffold-GS)
 
-Sincere Appreciation and Apology: Our cross-view assisted training strategy builds on MVGS; we gratefully acknowledge this inspiration, and the earlier omission of this attribution in our preprint has now been corrected.
+### 📢 Sincere Appreciation and Apology Regarding MVGS
+
+Our cross-view assisted training strategy builds on MVGS, and we gratefully acknowledge this inspiration. The earlier omission of this attribution in our preprint has now been fully corrected in the latest arXiv revision.
 
 [MVGS](https://github.com/xiaobiaodu/mvgs)
 
