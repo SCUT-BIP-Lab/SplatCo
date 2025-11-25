@@ -132,6 +132,12 @@ class="center">
 
 Our code follows several awesome repositories. We appreciate them for making their codes available to public.
 
+### Sincere Appreciation and Apology Regarding MVGS
+
+Our cross-view assisted training strategy builds on MVGS, and we gratefully acknowledge this inspiration. The earlier omission of this attribution in our preprint has now been fully corrected in the latest arXiv revision.
+
+[MVGS](https://github.com/xiaobiaodu/mvgs)
+
 [Mega-NeRF](https://github.com/cmusatyalab/mega-nerf)
 
 [Switch-NeRF](https://github.com/MiZhenxing/Switch-NeRF)
@@ -143,12 +149,6 @@ Our code follows several awesome repositories. We appreciate them for making the
 [Compact3DGS](https://github.com/maincold2/Compact-3DGS) 
 
 [Scaffold-GS](https://github.com/city-super/Scaffold-GS)
-
-### 📢 Sincere Appreciation and Apology Regarding MVGS
-
-Our cross-view assisted training strategy builds on MVGS, and we gratefully acknowledge this inspiration. The earlier omission of this attribution in our preprint has now been fully corrected in the latest arXiv revision.
-
-[MVGS](https://github.com/xiaobiaodu/mvgs)
 
 ## Star History
 
