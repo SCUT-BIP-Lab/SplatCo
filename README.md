@@ -1,9 +1,9 @@
 <p align="center">
 <h1 align="center"><strong>SplatCo: Structure-View Collaborative Gaussian Splatting for Detail-Preserving Large-Scale Unbounded Scene Rendering</strong></h1>
 
-## Overview
+## Abstract
 
-In this work, we propose Structure–View Collaborative Gaussian Splatting (SplatCo), a unified framework for high-fidelity reconstruction and rendering of large-scale outdoor scenes. Unlike prior approaches that separately address geometry representation or view consistency, SplatCo integrates both global structure modeling and multi-view coherence into a single, jointly optimized system. First, we incorporate multi-scale contextual information into a global tri-plane backbone using a three-level compensation mechanism, which aligns coarse scene layout with detailed local geometry and texture. Second, to maintain consistency across viewpoints, we synchronize gradient updates across overlapping views, ensuring coherent Gaussian positioning and appearance. Third, we introduce a visibility-aware optimization process that densifies sparsely observed regions while removing overfitted or inconsistent Gaussians based on structural consistency. By combining these components in a unified training and inference pipeline, SplatCo enables robust generalization and fine-detail reconstruction across complex, large-scale environments.
+Neural Radiance Fields (NeRFs) have achieved impressive results in novel view synthesis but are less suited for large-scale scene reconstruction due to their reliance on dense per-ray sampling, which limits scalability and efficiency. In contrast, 3D Gaussian Splatting (3DGS) offers a more efficient alternative to computationally intensive volume rendering, enabling faster training and real-time rendering. Although recent efforts have extended 3DGS to large-scale settings, these methods often struggle to balance global structural coherence with local detail fidelity. Crucially, they also suffer from Gaussian redundancy due to a lack of effective geometric constraints, which further leads to rendering artifacts. To address these challenges, we present SplatCo, a structure–view collaborative Gaussian splatting framework for high-fidelity rendering of complex outdoor scenes. SplatCo builds upon three novel components: (1) a Cross-Structure Collaboration Module (CSCM) that combines global tri-plane representations, which capture coarse scene layouts, with local context grid features that represent fine details. This fusion is achieved through the proposed hierarchical compensation mechanism, ensuring both global spatial awareness and local detail preservation; (2) a Cross-View Pruning Mechanism (CVPM) that prunes overfitted or inaccurate Gaussians based on structural consistency, thereby improving storage efficiency while avoiding Gaussian rendering artifacts; (3) a Structure–View Co-learning (SVC) Module that aggregates structural gradients with view gradients, redirecting the Gaussian geometric and appearance attribute optimization more robustly guided by additional structural gradient flow. By combining these key components, SplatCo effectively achieves high-fidelity rendering for large-scale scenes. Comprehensive evaluations on 13 diverse large-scale scenes, including Mill19, MatrixCity, Tanks & Temples, WHU, and custom aerial captures, demonstrate that SplatCo establishes a new benchmark for high-fidelity rendering of large-scale unbounded scenes.
 
 <p align="center">
 <img src="fig_cover.png" width=100% height=100% 
@@ -134,7 +134,9 @@ Our code follows several awesome repositories. We appreciate them for making the
 
 ### Sincere Appreciation and Apology Regarding MVGS
 
-Our cross-view assisted training strategy builds on MVGS, and we gratefully acknowledge this inspiration. The earlier omission of this attribution in our preprint has now been fully corrected in the latest arXiv revision.
+Our structure–view colearning module builds on MVGS, and we gratefully acknowledge this inspiration. The earlier omission of this attribution in our preprint has now been fully corrected in the latest arXiv revision.
+
+[CityGS-X](https://github.com/gyy456/CityGS-X)
 
 [MVGS](https://github.com/xiaobiaodu/mvgs)
 
