@@ -30,7 +30,7 @@ We performe experiments on five self-collected scenes(SCUT Campus and plateau re
 
 Please contact us:
 
-Haihong Xiao and Jianan Zou: auhhxiao@mail.scut.edu.cn; 202130450216@mail.scut.edu.cn
+Haihong Xiao and Jianan Zou: auhhxiao@mail.scut.edu.cn; aujazou@mail.scut.edu.cn
 
 Prof. Wenxiong Kang: auwxkang@scut.edu.cn
 
