@@ -110,14 +110,14 @@ python metrics.py -m <path to trained model>
 Visual comparisons on Mill-19 and MatrixCity dataset:
 
 <p align="center">
-<img src="./results/city_mill.png" width=100% height=100% 
+<img src="./results/fig_mill.png" width=100% height=100% 
 class="center">
 </p>
 
 Visual comparisons on tandt outdoor scenes:
 
 <p align="center">
-<img src="./results/tandt.png" width=100% height=100% 
+<img src="./results/fig_tnt.png" width=100% height=100% 
 class="center">
 </p>
 
